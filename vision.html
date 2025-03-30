@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Oftalmologia Visão Clara - Excelência em Saúde Ocular</title>
+    <meta name="description" content="Our 48-hour educational program offers research-based information about practices that may support cognitive function and memory health.">
+    <!-- WordPress Meta -->
+    <meta name="generator" content="WordPress 6.4.3" />
+    <link rel="pingback" href="/xmlrpc.php" />
+    
+    <!-- WooCommerce Meta -->
+    <meta name="woocommerce-version" content="8.5.2" />
+    <link rel="https://api.w.org/" href="/wp-json/" />
+    
+    <!-- Stripe Integration -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+    <!-- ActiveCampaign Tracking -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- WooCommerce Styles -->
+    <link rel="stylesheet" href="/wp-content/plugins/woocommerce/assets/css/woocommerce.css" type="text/css" media="all" />
+
+    <!-- SEO & Verification -->
+    <meta name="google-site-verification" content="google-code" />
+    <meta name="norton-safeweb-site-verification" content="norton-code"/>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '000000000000000'); 
+    fbq('track', 'PageView');
+    </script>
+
+    <!-- PayPal Integration -->
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0074b3;
+            --secondary-color: #4aa9e0;
+            --accent-color: #00a8e8;
+            --light-color: #e5f6ff;
+            --dark-color: #003b5c;
+            --text-color: #333333;
+            --background-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer; /* Added cursor pointer to indicate it's clickable */
+        }
+        
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .logo-text h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        
+        .logo-text p {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 59, 92, 0.8), rgba(0, 59, 92, 0.8)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* About Section */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--dark-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            height: 200px;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .testimonials .section-title h2 {
+            color: white;
+        }
+        
+        .testimonials .section-title h2::after {
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+        
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-name h4 {
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-name p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .team-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .team-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 20px;
+        }
+        
+        .team-info h3 {
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .team-info p {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .team-info .specialty {
+            color: var(--text-color);
+            font-weight: normal;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Section */
+        .contact-flex {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            background-color: var(--light-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--primary-color);
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-form h3 {
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .form-group input, 
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group .btn {
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Políticas Section */
+        .politicas-content {
+            background-color: var(--background-color);
+            padding: 100px 0 60px;
+        }
+        
+        .politicas-content h2 {
+            color: var(--dark-color);
+            margin-bottom: 25px;
+        }
+        
+        .politicas-content h3 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+        }
+        
+        .politicas-content p {
+            margin-bottom: 15px;
+        }
+        
+        .politicas-content ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .politicas-content ul li {
+            margin-bottom: 8px;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 30px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-to-home i {
+            margin-right: 8px;
+        }
+        
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+        
+        /* Page display control */
+        .page-content {
+            display: block;
+        }
+        
+        .page-content.hidden {
+            display: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+            
+            .logo {
+                margin-bottom: 0;
+                justify-content: flex-start;
+            }
+            
+            .mobile-nav-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1001;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                padding: 80px 20px 20px;
+                z-index: 1000;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+                width: 100%;
+            }
+            
+            nav ul li a {
+                display: block;
+                font-size: 1.2rem;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            
+            .about-content,
+            .contact-flex {
+                flex-direction: column;
+            }
+            
+            .hero {
+                text-align: center;
+                padding: 0 20px;
+            }
+            
+            .hero-content {
+                margin: 0 auto;
+            }
+            
+            /* Overlay */
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+            
+            .overlay.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WooCommerce Structure -->
+    <div style="display: none;">
+        <div class="woocommerce"></div>
+        <div class="woocommerce-checkout"></div>
+        <form class="checkout_coupon woocommerce-form-coupon"></form>
+    </div>
+    
+    <!-- Authorize.net Integration -->
+    <script type="text/javascript" src="https://jstest.authorize.net/v3/AcceptUI.js" charset="utf-8"></script>
+    <input type="hidden" name="dataValue" id="dataValue" />
+    <input type="hidden" name="dataDescriptor" id="dataDescriptor" />
+    
+    <!-- WordPress Common Elements -->
+    <div style="display: none;">
+        <div class="wp-block"></div>
+        <div id="wpadminbar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo" id="logo">
+                <div class="logo-img">VC</div>
+                <div class="logo-text">
+                    <h1>Visão Clara</h1>
+                    <p>Centro de Oftalmologia</p>
+                </div>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Menu de navegação">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <!-- Home Content -->
+    <div id="home-content" class="page-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Cuidando da sua visão com excelência</h2>
+                    <p>Oferecemos tratamentos oftalmológicos avançados e atendimento personalizado para garantir a saúde dos seus olhos.</p>
+                    <a href="#contato" class="btn">Agende uma Consulta</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Sobre Nós</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clínica Visão Clara">
+                    </div>
+                    <div class="about-text">
+                        <h3>A melhor clínica oftalmológica da região</h3>
+                        <p>O Centro de Oftalmologia Visão Clara é referência em saúde ocular há mais de 15 anos. Nossa missão é proporcionar atendimento de excelência utilizando equipamentos de última geração e profissionais altamente qualificados.</p>
+                        <p>Com uma estrutura moderna e acolhedora, oferecemos diagnóstico preciso e tratamentos eficazes para todas as necessidades oftalmológicas, desde consultas de rotina até procedimentos cirúrgicos complexos.</p>
+                        <p>Nossos valores são baseados no compromisso com a ética profissional, atendimento humanizado e busca constante por inovação para garantir a melhor experiência para nossos pacientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossos Serviços</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Consultas Oftalmológicas</h3>
+                            <p>Exames completos de vista com tecnologia avançada para diagnóstico preciso e acompanhamento personalizado da saúde ocular.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1580121441575-41adfb39c220?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Cirurgia Refrativa</h3>
+                            <p>Procedimentos modernos como LASIK para correção de miopia, hipermetropia e astigmatismo, reduzindo ou eliminando a necessidade de óculos.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1572636583238-91c6e43ceee5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Tratamento de Catarata</h3>
+                            <p>Cirurgia de catarata com técnicas minimamente invasivas e implante de lentes intraoculares de última geração.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1584036553920-82056110a8d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Glaucoma</h3>
+                            <p>Diagnóstico precoce e tratamento avançado do glaucoma para prevenção da perda de visão, incluindo terapias medicamentosas e cirúrgicas.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Oftalmopediatria</h3>
+                            <p>Cuidados especializados para a saúde ocular infantil, incluindo exames preventivos e tratamento de problemas visuais na infância.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background-image: url('https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover;"></div>
+                        <div class="service-content">
+                            <h3>Óculos e Lentes</h3>
+                            <p>Ampla seleção de armações e lentes de alta qualidade, com consultoria personalizada para escolha da melhor opção para suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="depoimentos">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Depoimentos</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"Fiz cirurgia de catarata na Visão Clara e foi uma experiência excelente. Equipe atenciosa, procedimento sem dor e recuperação rápida. Agora enxergo perfeitamente!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Oliveira">
+                            </div>
+                            <div class="testimonial-name">
+                                <h4>Ana Oliveira</h4>
+                                <p>Paciente há 2 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"Minha filha de 5 anos foi atendida pela Dra. Márcia e ficou encantada. O consultório é acolhedor e adaptado para crianças, tornando o exame uma experiência agradável."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Pereira">
+                            </div>
+                            <div class="testimonial-name">
+                                <h4>Carlos Pereira</h4>
+                                <p>Paciente há 1 ano</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>"Após anos usando óculos, realizei a cirurgia refrativa com o Dr. Ricardo. O atendimento foi excepcional, desde a consulta até o pós-operatório. Estou muito satisfeita com os resultados!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Juliana Costa">
+                            </div>
+                            <div class="testimonial-name">
+                                <h4>Juliana Costa</h4>
+                                <p>Paciente há 3 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Entre em Contato</h2>
+                </div>
+                <div class="contact-flex">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <span>📍</span>
+                                </div>
+                                <div>
+                                    <h4>Endereço</h4>
+                                    <p>Av. Paulista, 1000 - Bela Vista</p>
+                                    <p>São Paulo - SP, 01310-100</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <span>📞</span>
+                                </div>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <p>(11) 3456-7890</p>
+                                    <p>WhatsApp: (11) 98765-4321</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <span>✉️</span>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contato@visaoclara.com.br</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <span>🕓</span>
+                                </div>
+                                <div>
+                                    <h4>Horário de Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h às 18h</p>
+                                    <p>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Agende uma Consulta</h3>
+                        <form id="appointment-form">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Serviço Desejado</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="consulta">Consulta Oftalmológica</option>
+                                    <option value="cirurgia">Cirurgia Refrativa</option>
+                                    <option value="catarata">Tratamento de Catarata</option>
+                                    <option value="glaucoma">Tratamento de Glaucoma</option>
+                                    <option value="pediatria">Oftalmopediatria</option>
+                                    <option value="oculos">Óculos e Lentes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem (opcional)</label>
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn">Enviar Solicitação</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Políticas Content -->
+    <div id="politicas-content" class="page-content hidden">
+        <section class="politicas-content">
+            <div class="container">
+                <h2>Políticas de Privacidade e Termos de Uso</h2>
+                
+                <p>Última atualização: 25 de Maio de 2025</p>
+                
+                <p>O Centro de Oftalmologia Visão Clara está comprometido com a proteção da sua privacidade e dados pessoais. Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos suas informações pessoais quando você utiliza nossos serviços, seja presencialmente ou através do nosso website.</p>
+                
+                <h3>1. Informações que Coletamos</h3>
+                
+                <p>Podemos coletar os seguintes tipos de informações:</p>
+                
+                <ul>
+                    <li><strong>Informações de Identificação Pessoal:</strong> Nome completo, data de nascimento, CPF, RG, endereço, e-mail, número de telefone.</li>
+                    <li><strong>Informações de Saúde:</strong> Histórico médico, alergias, medicamentos, exames anteriores, histórico familiar de doenças oculares e outras informações relevantes para o seu tratamento oftalmológico.</li>
+                    <li><strong>Informações de Pagamento:</strong> Dados de cartão de crédito, informações bancárias e de seguros de saúde.</li>
+                    <li><strong>Informações de Uso do Website:</strong> Endereço IP, tipo de navegador, provedor de serviços de Internet, páginas de referência/saída, arquivos visualizados, sistema operacional, data/hora e dados de navegação.</li>
+                </ul>
+                
+                <h3>2. Como Utilizamos Suas Informações</h3>
+                
+                <p>Utilizamos suas informações para:</p>
+                
+                <ul>
+                    <li>Fornecer, personalizar e melhorar nossos serviços médicos;</li>
+                    <li>Processar agendamentos, consultas e procedimentos;</li>
+                    <li>Comunicar sobre seu tratamento, agendamentos e informações relacionadas;</li>
+                    <li>Processar pagamentos e faturamento;</li>
+                    <li>Cumprir obrigações legais e regulatórias;</li>
+                    <li>Realizar pesquisas internas para melhorar nossos serviços;</li>
+                    <li>Proteger nossos direitos, propriedade ou segurança, e de nossos pacientes.</li>
+                </ul>
+                
+                <h3>3. Compartilhamento de Informações</h3>
+                
+                <p>Podemos compartilhar suas informações com:</p>
+                
+                <ul>
+                    <li>Profissionais de saúde envolvidos no seu tratamento;</li>
+                    <li>Planos de saúde e seguradoras para processamento de pagamentos;</li>
+                    <li>Laboratórios e outros prestadores de serviços necessários para seu tratamento;</li>
+                    <li>Autoridades governamentais, quando exigido por lei;</li>
+                    <li>Prestadores de serviços que nos ajudam a operar nosso negócio (sempre com contratos de confidencialidade).</li>
+                </ul>
+                
+                <h3>4. Segurança de Dados</h3>
+                
+                <p>Implementamos medidas de segurança técnicas, administrativas e físicas para proteger suas informações contra acesso não autorizado, uso indevido ou divulgação. No entanto, nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
+                
+                <h3>5. Seus Direitos</h3>
+                
+                <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem o direito de:</p>
+                
+                <ul>
+                    <li>Acessar seus dados pessoais;</li>
+                    <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+                    <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+                    <li>Solicitar a portabilidade dos dados;</li>
+                    <li>Revogar o consentimento a qualquer momento;</li>
+                    <li>Ser informado sobre o compartilhamento de seus dados com entidades públicas e privadas;</li>
+                    <li>Não consentir com o processamento automatizado de dados.</li>
+                </ul>
+                
+                <h3>6. Período de Retenção</h3>
+                
+                <p>Mantemos seus dados pessoais pelo tempo necessário para cumprir com as finalidades para as quais foram coletados, incluindo obrigações legais, contábeis ou de relatórios.</p>
+                
+                <h3>7. Cookies e Tecnologias Semelhantes</h3>
+                
+                <p>Nosso website utiliza cookies e tecnologias semelhantes para melhorar sua experiência de navegação, analisar o uso do site e personalizar conteúdo. Você pode controlar o uso de cookies através das configurações do seu navegador.</p>
+                
+                <h3>8. Alterações nesta Política</h3>
+                
+                <p>Podemos atualizar esta Política periodicamente. A versão mais recente estará sempre disponível em nosso website com a data da última atualização.</p>
+                
+                <h3>9. Contato</h3>
+                
+                <p>Se você tiver dúvidas ou preocupações sobre nossa Política de Privacidade ou práticas de dados, entre em contato com nosso Encarregado de Proteção de Dados:</p>
+                
+                <p>
+                    Email: privacidade@visaoclara.com.br<br>
+                    Telefone: (11) 3456-7890<br>
+                    Endereço: Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100
+                </p>
+                
+                <a href="#" class="back-to-home" id="back-to-home"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Visão Clara</h3>
+                    <p>Centro de excelência em oftalmologia, dedicado a proporcionar a melhor experiência em saúde ocular com atendimento humanizado e tecnologia de ponta.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio" class="nav-link">Início</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#servicos" class="nav-link">Consultas Oftalmológicas</a></li>
+                        <li><a href="#servicos" class="nav-link">Cirurgia Refrativa</a></li>
+                        <li><a href="#servicos" class="nav-link">Tratamento de Catarata</a></li>
+                        <li><a href="#servicos" class="nav-link">Glaucoma</a></li>
+                        <li><a href="#servicos" class="nav-link">Oftalmopediatria</a></li>
+                        <li><a href="#servicos" class="nav-link">Óculos e Lentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Av. Paulista, 1000 - Bela Vista</li>
+                        <li>São Paulo - SP, 01310-100</li>
+                        <li>(11) 3456-7890</li>
+                        <li>contato@visaoclara.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Centro de Oftalmologia Visão Clara. Todos os direitos reservados. | <a href="#" id="politicas-link">Políticas de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-nav-toggle');
+            const nav = document.querySelector('nav');
+            const overlay = document.querySelector('.overlay');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const logo = document.getElementById('logo');
+            const politicasLink = document.getElementById('politicas-link');
+            const backToHomeLink = document.getElementById('back-to-home');
+            const homeContent = document.getElementById('home-content');
+            const politicasContent = document.getElementById('politicas-content');
+            
+            // Logo click functionality - return to home content
+            logo.addEventListener('click', function() {
+                politicasContent.classList.add('hidden');
+                homeContent.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            });
+            
+            // Toggle menu when hamburger icon is clicked
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                overlay.classList.toggle('active');
+                
+                // Change icon based on menu state
+                const icon = menuToggle.querySelector('i');
+                if (nav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close menu when overlay is clicked
+            overlay.addEventListener('click', function() {
+                nav.classList.remove('active');
+                overlay.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+            
+            // Políticas de Privacidade toggle
+            politicasLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                homeContent.classList.add('hidden');
+                politicasContent.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            });
+            
+            backToHomeLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                politicasContent.classList.add('hidden');
+                homeContent.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            });
+            
+            // Close menu when a nav link is clicked and ensure home content is shown
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    // Ensure we're showing home content when nav links are clicked
+                    politicasContent.classList.add('hidden');
+                    homeContent.classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
