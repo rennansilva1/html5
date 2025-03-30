@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Clara | Excelência em Saúde Ocular</title>
+    <meta name="description" content="Nossa clínica oferece tratamentos oftalmológicos avançados e atendimento personalizado para garantir a saúde dos seus olhos.">
+    <!-- WordPress Meta -->
+    <meta name="generator" content="WordPress 6.4.3" />
+    <link rel="pingback" href="/xmlrpc.php" />
+    
+    <!-- WooCommerce Meta -->
+    <meta name="woocommerce-version" content="8.5.2" />
+    <link rel="https://api.w.org/" href="/wp-json/" />
+    
+    <!-- Stripe Integration -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+    <!-- ActiveCampaign Tracking -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- WooCommerce Styles -->
+    <link rel="stylesheet" href="/wp-content/plugins/woocommerce/assets/css/woocommerce.css" type="text/css" media="all" />
+    <style>
+        body {
+            background-color: #0a2a42;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #2196f3, #00bcd4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #2196f3, #00bcd4);
+            border: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .input-field {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #009688;
+            box-shadow: 0 0 0 2px rgba(0, 150, 136, 0.2);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #666;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #2196f3;
+        }
+
+        .footer-disclaimer {
+            text-align: center;
+            color: #666;
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <!-- SEO & Verification -->
+    <meta name="google-site-verification" content="google-code" />
+    <meta name="norton-safeweb-site-verification" content="norton-code"/>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '000000000000000'); 
+    fbq('track', 'PageView');
+    </script>
+
+    <!-- PayPal Integration -->
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:0,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Schema.org for E-commerce -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Centro de Oftalmologia Visão Clara",
+      "url": "/",
+      "sameAs": [
+        "#",
+        "#"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1247"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- WooCommerce Structure -->
+    <div style="display: none;">
+        <div class="woocommerce"></div>
+        <div class="woocommerce-checkout"></div>
+        <form class="checkout_coupon woocommerce-form-coupon"></form>
+    </div>
+    
+    <!-- Authorize.net Integration -->
+    <script type="text/javascript" src="https://jstest.authorize.net/v3/AcceptUI.js" charset="utf-8"></script>
+    <input type="hidden" name="dataValue" id="dataValue" />
+    <input type="hidden" name="dataDescriptor" id="dataDescriptor" />
+    
+    <!-- WordPress Common Elements -->
+    <div style="display: none;">
+        <div class="wp-block"></div>
+        <div id="wpadminbar"></div>
+    </div>
+
+    <div class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Centro de Oftalmologia</span>
+                    <br><span>Visão Clara</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Oferecemos tratamentos oftalmológicos avançados e atendimento personalizado para garantir a saúde dos seus olhos, com profissionais experientes e equipamentos de última geração.
+                </p>
+            </div>
+
+            <!-- Features Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="feature-card">
+                    <h3 class="text-xl font-bold mb-2">Diagnóstico Preciso</h3>
+                    <p class="text-gray-400">Nossa clínica oferece exames completos com tecnologia avançada para diagnóstico preciso de doenças oculares e problemas de visão.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-xl font-bold mb-2">Tratamentos Modernos</h3>
+                    <p class="text-gray-400">Utilizamos os mais recentes avanços em oftalmologia para proporcionar tratamentos eficazes e minimamente invasivos.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-xl font-bold mb-2">Atendimento Personalizado</h3>
+                    <p class="text-gray-400">Cada paciente recebe um plano de tratamento individualizado de acordo com suas necessidades específicas e histórico de saúde ocular.</p>
+                </div>
+            </div>
+
+            <!-- Main Image -->
+            <div class="text-center mb-12">
+                <div class="flex justify-center">
+                    <!-- No image as requested -->
+                </div>
+            </div>
+
+            <!-- Replacing Form with Contact Button -->
+            <div class="max-w-md mx-auto p-8 rounded-lg shadow-xl text-center" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h2 class="text-2xl font-bold mb-6 text-center">Agende sua Consulta</h2>
+                <p class="text-gray-300 mb-6">Entre em contato conosco para agendar uma avaliação completa da sua saúde ocular. Nossa equipe de especialistas está pronta para atendê-lo com excelência.</p>
+                <a href="/cdn-cgi/l/email-protection#93f0fcfde7f2f0e7d3f6ebf2fee3fff6bdf0fcfe" id="contact-button" class="cta-button inline-block">Agendar Agora</a>
+                <p class="disclaimer mt-4">Todas as consultas são agendadas em até 24 horas. Nossa clínica oferece atendimento para todas as idades, com especialistas em diversas áreas da oftalmologia. Consulte seu médico regularmente para manter a saúde dos seus olhos.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex-grow" style="min-height: 60px;"></div>
+
+    <!-- Legal Pages Content Modal -->
+    <div style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; overflow-y: auto; background-color: rgba(0, 0, 0, 0.75);" id="legal-modal">
+        <div style="position: relative; background-color: #1e293b; max-width: 800px; margin: 50px auto; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);">
+            <button id="close-legal-modal" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; color: #ffffff; cursor: pointer; z-index: 1001;">✕</button>
+            
+            <div id="legal-content-container">
+                <!-- Terms of Use Section -->
+                <section id="terms-of-use" class="py-12 px-4 sm:px-6 lg:px-8" style="display: none;">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="legal-content">
+                            <h1 class="text-3xl font-bold mb-6" style="background: linear-gradient(45deg, #2196f3, #00bcd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Termos de Uso</h1>
+                            <div class="space-y-4 text-gray-300">
+                                <p>Última atualização: <span id="termsCurrentDate"></span></p>
+                                
+                                <!-- Acceptance Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Aceitação dos Termos</h2>
+                                    <p class="mt-2">Ao acessar ou utilizar o site do Centro de Oftalmologia Visão Clara, você concorda em ficar vinculado a estes Termos de Uso e todas as leis e regulamentos aplicáveis. Se você não concorda com algum destes termos, está proibido de usar ou acessar este site.</p>
+                                </div>
+                                
+                                <!-- Content Usage Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Uso do Conteúdo</h2>
+                                    <p class="mt-2">O conteúdo do site do Centro de Oftalmologia Visão Clara é apenas para sua informação e uso geral. Está sujeito a alterações sem aviso prévio. Os serviços e informações são destinados a serem utilizados conforme orientado. Qualquer modificação ou adaptação não é recomendada e pode levar a resultados diferentes dos anunciados.</p>
+                                </div>
+                                
+                                <!-- Responsibility Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Responsabilidade do Usuário</h2>
+                                    <p class="mt-2">Você é responsável por garantir que seu uso do Centro de Oftalmologia Visão Clara esteja em conformidade com a lei aplicável. Você também é responsável por tomar todas as precauções necessárias para garantir que qualquer conteúdo que você possa obter do site esteja livre de vírus ou outros componentes prejudiciais.</p>
+                                </div>
+                                
+                                <!-- Intellectual Property Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Propriedade Intelectual</h2>
+                                    <p class="mt-2">Todo o conteúdo incluído neste site, como texto, gráficos, logotipos, imagens, bem como sua compilação, e qualquer software usado no site, é propriedade do Centro de Oftalmologia Visão Clara ou de seus fornecedores e protegido por leis de direitos autorais e propriedade intelectual.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Privacy Policy Section -->
+                <section id="privacy-policy" class="py-12 px-4 sm:px-6 lg:px-8" style="display: none;">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="legal-content">
+                            <h1 class="text-3xl font-bold mb-6" style="background: linear-gradient(45deg, #2196f3, #00bcd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Política de Privacidade</h1>
+                            <div class="space-y-4 text-gray-300">
+                                <p>Última atualização: <span id="privacyCurrentDate"></span></p>
+
+                                <!-- Information Collection Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Coleta de Informações</h2>
+                                    <p class="mt-2">Coletamos informações que você fornece diretamente a nós, como quando cria uma conta, se inscreve em nossa newsletter ou entra em contato conosco para suporte. Os tipos de informações que podemos coletar incluem seu nome, endereço de e-mail, endereço postal, número de telefone e quaisquer outras informações que você opte por fornecer.</p>
+                                </div>
+
+                                <!-- Information Usage Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Uso de Informações</h2>
+                                    <p class="mt-2">Usamos as informações que coletamos para:</p>
+                                    <ul class="list-disc pl-6 mt-2">
+                                        <li class="text-gray-300">Fornecer, manter e melhorar nossos serviços</li>
+                                        <li class="text-gray-300">Processar transações e enviar informações relacionadas</li>
+                                        <li class="text-gray-300">Enviar avisos técnicos, atualizações, alertas de segurança e mensagens de suporte</li>
+                                        <li class="text-gray-300">Responder aos seus comentários, perguntas e solicitações</li>
+                                        <li class="text-gray-300">Comunicar-se com você sobre produtos, serviços, ofertas e eventos</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Data Protection Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Proteção de Dados</h2>
+                                    <p class="mt-2">Tomamos medidas razoáveis para ajudar a proteger as informações sobre você contra perda, roubo, uso indevido, acesso não autorizado, divulgação, alteração e destruição. No entanto, nenhum sistema de segurança é impenetrável e não podemos garantir a segurança de nossos sistemas 100%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cookie Policy Section -->
+                <section id="cookie-policy" class="py-12 px-4 sm:px-6 lg:px-8" style="display: none;">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="legal-content">
+                            <h1 class="text-3xl font-bold mb-6" style="background: linear-gradient(45deg, #2196f3, #00bcd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Política de Cookies</h1>
+                            <div class="space-y-4 text-gray-300">
+                                <p>Última atualização: <span id="cookieCurrentDate"></span></p>
+
+                                <!-- What are Cookies Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">O que são Cookies</h2>
+                                    <p class="mt-2">Cookies são pequenos arquivos de texto que são colocados em seu computador ou dispositivo móvel quando você visita um site. Eles são amplamente utilizados para fazer com que os sites funcionem de maneira mais eficiente e forneçam informações aos proprietários do site.</p>
+                                </div>
+
+                                <!-- How We Use Cookies Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Como Usamos Cookies</h2>
+                                    <p class="mt-2">Usamos cookies para diversos fins, incluindo:</p>
+                                    <ul class="list-disc pl-6 mt-2">
+                                        <li class="text-gray-300">Habilitar certas funções do site</li>
+                                        <li class="text-gray-300">Fornecer análises</li>
+                                        <li class="text-gray-300">Armazenar suas preferências</li>
+                                        <li class="text-gray-300">Permitir a entrega de anúncios e segmentação comportamental</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Your Rights Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Seus Direitos</h2>
+                                    <p class="mt-2">Você pode optar por desativar cookies através das opções do seu navegador. Para saber informações mais detalhadas sobre o gerenciamento de cookies com navegadores específicos, elas podem ser encontradas nos respectivos sites dos navegadores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Legal Notice Section -->
+                <section id="legal-notice" class="py-12 px-4 sm:px-6 lg:px-8" style="display: none;">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="legal-content">
+                            <h1 class="text-3xl font-bold mb-6" style="background: linear-gradient(45deg, #2196f3, #00bcd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Aviso Legal</h1>
+                            <div class="space-y-4 text-gray-300">
+                                <p>Última atualização: <span id="legalCurrentDate"></span></p>
+
+                                <!-- Individual Results Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Resultados Individuais</h2>
+                                    <p class="mt-2">Os resultados obtidos com os tratamentos do Centro de Oftalmologia Visão Clara podem variar de pessoa para pessoa. Os depoimentos e exemplos utilizados são resultados excepcionais, que não se aplicam ao cliente médio, e não pretendem representar ou garantir que alguém alcançará os mesmos ou resultados semelhantes.</p>
+                                </div>
+
+                                <!-- Medical Consultation Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Consulta Médica</h2>
+                                    <p class="mt-2">As informações fornecidas pelo Centro de Oftalmologia Visão Clara não substituem o aconselhamento médico profissional, diagnóstico ou tratamento. Sempre procure o conselho do seu médico ou outro profissional de saúde qualificado com qualquer dúvida que você possa ter sobre uma condição médica ou antes de iniciar qualquer novo regime de saúde.</p>
+                                </div>
+
+                                <!-- Responsibility Section -->
+                                <div class="mt-6">
+                                    <h2 class="text-xl font-semibold">Responsabilidade</h2>
+                                    <p class="mt-2">Ao utilizar os serviços do Centro de Oftalmologia Visão Clara, você reconhece que é responsável pela sua própria saúde e decisões. Os criadores e distribuidores deste serviço não são responsáveis por quaisquer problemas de saúde que possam resultar da aplicação das técnicas, conselhos e recomendações apresentados neste programa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="py-12 px-4 sm:px-6 lg:px-8" style="display: none;">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="contact-content" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; margin: 2rem auto; max-width: 800px; text-align: center;">
+                            <h1 class="text-3xl font-bold mb-6" style="background: linear-gradient(45deg, #2196f3, #00bcd4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Entre em Contato</h1>
+                            <p class="text-gray-300 mb-8">Tem perguntas sobre o Centro de Oftalmologia Visão Clara? Estamos aqui para ajudar. Sinta-se à vontade para entrar em contato conosco por e-mail e responderemos o mais rápido possível.</p>
+                            
+                            <div class="text-center">
+                                <p class="text-xl text-gray-200">Envie-nos um e-mail:</p>
+                                <a href="/cdn-cgi/l/email-protection#35565a5b4154564175504d54584559501b565a58" id="contact-page-button" class="cta-button inline-block">ENTRE EM CONTATO AGORA</a>
+                                <p class="text-gray-400 mt-4">Normalmente respondemos a todas as consultas dentro de 24-48 horas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <footer class="footer">
+            <div class="container mx-auto px-4" style="margin-top: 2rem;">
+                <div class="footer-links">
+                    <a href="#terms-of-use" class="footer-link" data-page="terms-of-use">Termos de Uso</a>
+                    <a href="#privacy-policy" class="footer-link" data-page="privacy-policy">Política de Privacidade</a>
+                    <a href="#cookie-policy" class="footer-link" data-page="cookie-policy">Política de Cookies</a>
+                    <a href="#legal-notice" class="footer-link" data-page="legal-notice">Aviso Legal</a>
+                    <a href="#contact" class="footer-link" data-page="contact">Contato</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <p>Este site não é afiliado ao Facebook, Google ou qualquer uma de suas entidades. Depois de sair do Facebook ou Google, a responsabilidade não é deles, mas do nosso site. Fazemos todos os esforços para indicar e mostrar claramente todas as evidências do produto e usar resultados reais. Não vendemos seu e-mail ou qualquer informação para terceiros. Nunca fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato para falar conosco.</p>
+                    <p class="mt-4">© 2025 Centro de Oftalmologia Visão Clara. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- WooCommerce Cart Fragment -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+        window.wc_cart_fragments_params = {
+            ajax_url: '/wp-admin/admin-ajax.php',
+            fragment_name: 'wc_fragments'
+        };
+    </script>
+    
+    <!-- Stripe Payment Intent -->
+    <script type="text/javascript">
+        window.stripe = Stripe('pk_test_sample');
+    </script>
+    
+    <!-- WordPress Ajax -->
+    <script type="text/javascript">
+        var ajaxurl = '/wp-admin/admin-ajax.php';
+        var wc_add_to_cart_params = {};
+    </script>
+
+    <!-- Dynamic Email Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded successfully');
+            
+            // Get the current domain
+            const currentDomain = window.location.hostname;
+            
+            // Default to example.com for local testing
+            const domain = currentDomain === 'localhost' || currentDomain === '127.0.0.1' ? 'example.com' : currentDomain;
+            
+            // Set up the contact button with the correct email
+            const contactButton = document.getElementById('contact-button');
+            const emailAddress = 'contato@' + domain;
+            
+            // Update href and display a tooltip with the email
+            contactButton.href = 'mailto:' + emailAddress;
+            contactButton.title = emailAddress;
+            
+            // Set up the contact page button 
+            const contactPageButton = document.getElementById('contact-page-button');
+            if (contactPageButton) {
+                contactPageButton.href = 'mailto:' + emailAddress;
+                contactPageButton.title = emailAddress;
+            }
+            
+            // Set current dates for legal pages
+            const currentDate = new Date().toLocaleDateString('pt-BR');
+            const dateElements = ['termsCurrentDate', 'privacyCurrentDate', 'cookieCurrentDate', 'legalCurrentDate'];
+            dateElements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.textContent = currentDate;
+            });
+            
+            // Modal functionality
+            const legalModal = document.getElementById('legal-modal');
+            const closeModalButton = document.getElementById('close-legal-modal');
+            
+            // Handle footer link clicks
+            document.querySelectorAll('.footer-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    if (pageId) {
+                        // Show modal
+                        legalModal.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling of background
+                        
+                        // Hide all sections first
+                        document.querySelectorAll('#legal-content-container > section').forEach(section => {
+                            section.style.display = 'none';
+                        });
+                        
+                        // Show only the clicked section
+                        document.getElementById(pageId).style.display = 'block';
+                    }
+                });
+            });
+            
+            // Handle close modal button
+            if (closeModalButton) {
+                closeModalButton.addEventListener('click', function() {
+                    legalModal.style.display = 'none';
+                    document.body.style.overflow = ''; // Re-enable scrolling
+                });
+            }
+            
+            // Close modal when clicking outside content
+            legalModal.addEventListener('click', function(e) {
+                if (e.target === legalModal) {
+                    legalModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Check for hash in URL and navigate to correct section
+            if (window.location.hash) {
+                const pageId = window.location.hash.substring(1);
+                const validPages = ['terms-of-use', 'privacy-policy', 'cookie-policy', 'legal-notice', 'contact'];
+                
+                if (validPages.includes(pageId)) {
+                    // Show modal
+                    legalModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Hide all sections first
+                    document.querySelectorAll('#legal-content-container > section').forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    
+                    // Show only the requested section
+                    document.getElementById(pageId).style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
